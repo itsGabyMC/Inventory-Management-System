@@ -148,61 +148,6 @@ The software code has been divided into four different packages:
 
 Click [here](src/com/inventory/) to skip directly to the source code.
 
+## Work-in-Progress
 
-This section provides a detailed view of product availability.
-
-stock
-Suppliers
-
-Manage and update supplier records with ease in this section.
-
-suppliers
-Customers
-
-Allows users to manage customer information by adding, updating, or deleting records.
-
-customers
-Sales
-
-In this section, users can process sales transactions by entering the customer and product codes. The software will automatically display relevant details such as stock and pricing.
-
-sales
-Purchase
-
-The purchase section allows users to view and record purchase transactions. Users need only input the product code, and existing details from the database will populate the fields.
-
-purchase
-Users
-
-This section is exclusive to ADMINISTRATORS, enabling them to manage user accounts by adding or removing users.
-
-users
-User Logs
-
-Administrators can view logs showing login and logout times for all users.
-
-logs
-Technologies Used
-
-The following free tools and technologies were used in this project:
-
-    JetBrains IntelliJ IDE
-    Apache NetBeans IDE (for GUI design)
-    MySQL Server and Workbench
-    JDK 16
-
-ER Diagram
-
-The ER diagram represents the sample schema used in this application.
-
-erdiag
-Source Code Structure
-
-The project source code is organized into the following packages:
-
-    Data Access Object (DAO): Contains the classes responsible for interacting with the database tables, performing CRUD operations.
-    Data Transfer Object (DTO): Handles the transfer of data between the data access and UI layers.
-    Database: Contains the ConnectionFactory class, responsible for establishing the database connection and validating user credentials.
-    User Interface (UI): Contains the classes for the graphical interface and user interactions.
-
-Click here to view the source code directly.
+This project is a work in progress and more features are yet to be added with new technologies. 
