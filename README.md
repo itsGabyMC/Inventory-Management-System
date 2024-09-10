@@ -1,30 +1,28 @@
 # Inventory Management System
 
-This is an Inventory Management System built in the form of a GUI desktop application developed in ***Java*** using ***MySQL*** as its database.
-The GUI was designed using **Swing** and the database connectivity was managed using **JDBC API**.
+This Inventory Management System is a desktop application with a graphical user interface, developed in Java with MySQL as the database backend. The user interface is designed with Swing, and JDBC API is used for seamless database connectivity.
 
+This system is ideal for small to medium-sized stores, allowing easy management and maintenance of inventory for:
 
-This application can be used by any small to mid-sized stores to easily maintain and manage an inventory of all their-
-- Products 
-- Customers 
-- Suppliers
-- Users 
-- Transactions
+    Products
+    Customers
+    Suppliers
+    Users
+    Transactions
 
 
 ## Features of the Application
 
-- Users can manage inventory and stock of all the products available in their store.
-- Users can manage all sales and purchase transactions made by the store.
-- Supports two user types:
-  1. Administrator
-  2. Employee
-  
-  [Admins have the ability to manage all other personnel.]
-- Any transaction made automatically handles the stock availability in the inventory.
-- Each section includes a search feature to make it easier for users to view the data they want to see.
-- Users only need to enter the product code while making a sale and all the relevant details will be retrieved from the database automatically.
-- Maintains a time log of all the users using the application.
+- Users can oversee inventory and manage the stock of all products available in the store.
+- Users can track and handle all sales and purchase transactions conducted by the store.
+-  Offers two user roles:
+        Administrator
+        Employee
+    [Administrators have full control to manage all staff.]
+ -  Every transaction automatically updates stock levels in the inventory.
+ -  Each section features a search function, making it easy for users to locate specific data.
+ -  During sales, users simply input the product code, and the system automatically retrieves all relevant details from the database.
+ - Logs and maintains a time record of all user activity within the application.
 
 ## How to download and run the software
 
@@ -148,6 +146,3 @@ The software code has been divided into four different packages:
 
 Click [here](src/com/inventory/) to skip directly to the source code.
 
-## Work-in-Progress
-
-This project is a work in progress and more features are yet to be added with new technologies. 
