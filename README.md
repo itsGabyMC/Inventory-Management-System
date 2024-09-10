@@ -147,7 +147,139 @@ The software code has been divided into four different packages:
   - User Interface (UI): Contains all the GUI classes making up the interface layer of the software.
 
 Click [here](src/com/inventory/) to skip directly to the source code.
+Inventory Management System
 
-## Work-in-Progress
+This is an Inventory Management System developed as a GUI desktop application in Java, utilizing MySQL as its backend database. The GUI is built using Swing, and database connectivity is handled through the JDBC API.
 
-This project is a work in progress and more features are yet to be added with new technologies. 
+This application is ideal for small to mid-sized businesses, enabling effortless tracking and management of inventory, including:
+
+    Products
+    Customers
+    Suppliers
+    Users
+    Transactions
+
+Application Features
+
+    Enables users to manage product inventory and monitor stock levels.
+
+    Handles sales and purchase transactions for streamlined store operations.
+
+    Supports two user roles:
+        Administrator
+        Employee
+
+    [Admins can manage other users and their permissions.]
+
+    Automatically updates stock levels in response to any transaction.
+
+    Includes search functionality in each section for quick data retrieval.
+
+    Users only need to input the product code during a sale, and all relevant details are fetched automatically from the database.
+
+    Maintains a time-stamped log of all users accessing the system.
+
+How to Download and Run the Application
+Minimum Requirements: JDK or JRE version 16.
+
+    Download and extract the ZIP folder: InventoryManagement.zip
+    Obtain the SQL dump file
+    Import the SQL dump file into MySQL Workbench to set up the necessary schema and tables locally.
+    After the inventory schema is set up, run the JAR file (InventoryManagement.jar) included in the ZIP folder.
+    Default MySQL database credentials:
+        Username: root
+        Password: root
+    If your MySQL setup uses a different username/password, follow these steps:
+        Navigate to the lib folder inside the downloaded ZIP.
+        Open the DBCredentials.xml file located there.
+        Change the values of the entry tags with keys username and password to reflect your database credentials (Lines 12 and 13):
+
+        xml
+
+          <properties>
+          <comment>Credentials for the database.</comment>
+            <entry key="username">root</entry>
+            <entry key="password">root</entry>
+          </properties>
+
+    Once the credentials match, the JAR file should run successfully if the minimum JRE version is met.
+    You can log into the system using Username: root and Password: root.
+
+Note:
+
+All project dependencies can be found in the lib directory.
+Application Screenshots
+Login Page
+
+The login page prompts the user for credentials, which are then authenticated against the database.
+
+loginpage
+Dashboard/Welcome Page
+
+This is the main page after successfully logging into the application.
+
+welcome
+Products
+
+Users can add, update, or remove products from the inventory in this section.
+
+products
+Current Stock
+
+This section provides a detailed view of product availability.
+
+stock
+Suppliers
+
+Manage and update supplier records with ease in this section.
+
+suppliers
+Customers
+
+Allows users to manage customer information by adding, updating, or deleting records.
+
+customers
+Sales
+
+In this section, users can process sales transactions by entering the customer and product codes. The software will automatically display relevant details such as stock and pricing.
+
+sales
+Purchase
+
+The purchase section allows users to view and record purchase transactions. Users need only input the product code, and existing details from the database will populate the fields.
+
+purchase
+Users
+
+This section is exclusive to ADMINISTRATORS, enabling them to manage user accounts by adding or removing users.
+
+users
+User Logs
+
+Administrators can view logs showing login and logout times for all users.
+
+logs
+Technologies Used
+
+The following free tools and technologies were used in this project:
+
+    JetBrains IntelliJ IDE
+    Apache NetBeans IDE (for GUI design)
+    MySQL Server and Workbench
+    JDK 16
+
+ER Diagram
+
+The ER diagram represents the sample schema used in this application.
+
+erdiag
+Source Code Structure
+
+The project source code is organized into the following packages:
+
+    Data Access Object (DAO): Contains the classes responsible for interacting with the database tables, performing CRUD operations.
+    Data Transfer Object (DTO): Handles the transfer of data between the data access and UI layers.
+    Database: Contains the ConnectionFactory class, responsible for establishing the database connection and validating user credentials.
+    User Interface (UI): Contains the classes for the graphical interface and user interactions.
+
+Click here to view the source code directly.
